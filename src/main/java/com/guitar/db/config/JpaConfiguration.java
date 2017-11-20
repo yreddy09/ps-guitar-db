@@ -31,7 +31,7 @@ public class JpaConfiguration {
 	@Bean
 	public JpaVendorAdapter jpaVendorAdapter() {
 		HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();
-		hibernateJpaVendorAdapter.setShowSql(true);
+		// hibernateJpaVendorAdapter.setShowSql(true);
 		hibernateJpaVendorAdapter.setGenerateDdl(true);
 		hibernateJpaVendorAdapter.setDatabase(Database.H2);
 		return hibernateJpaVendorAdapter;

@@ -33,6 +33,12 @@ public class ManufacturerPersistenceTests {
 	}
 
 	@Test
+	public void testGetManufactureByActiveTrue() throws Exception {
+		List<Manufacturer> mans = manufacturerRepository.getManufacturersActiveTrue();
+		assertEquals(1, mans.size());
+	}
+
+	@Test
 	public void testGetManufacturersThatSellModelsOfType() throws Exception {
 		List<Manufacturer> mans = manufacturerRepository.getManufacturersThatSellModelsOfType("Semi-Hollow Body Electric");
 		assertEquals(1, mans.size());
