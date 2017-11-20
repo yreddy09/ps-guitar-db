@@ -10,6 +10,8 @@
         <class>com.guitar.db.model.Manufacturer</class>
         <class>com.guitar.db.model.Model</class>
         <class>com.guitar.db.model.ModelType</class>
+        <class>com.guitar.db.model.Emp</class>
+        <class>com.guitar.db.model.Department</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 
 	</persistence-unit>
